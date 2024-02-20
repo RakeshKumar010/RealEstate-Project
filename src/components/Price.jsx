@@ -3,7 +3,7 @@ import React from "react";
 const Price = () => {
   return (
     <>
-      <div className="dark:text-white">
+      <div className="dark:text-white md:w-[90vw] w-full mx-auto">
         <div className="text-center mb-3">
           <p className="md:text-4xl text-2xl font-bold text-custom-orange">
             Flat Price
@@ -13,7 +13,7 @@ const Price = () => {
           </p>
         </div>
 
-        <table className="table-auto md:w-full w-full mx-auto text-left border-collapse">
+        <table className="table-auto md:w-full w-full mx-auto text-center border-collapse">
           <thead>
             <tr>
               <th className="px-4 py-2">Type</th>
@@ -31,7 +31,7 @@ const Price = () => {
               </td>
               <td className="border px-4 py-2">87.50 Lac</td>
               <td className="border px-4 py-2">
-                <button className="bg-custom-orange hover:bg-orange-500 text-white font-bold py-2 px-4 rounded">
+                <button className="bg-custom-orange  text-white font-bold py-2 px-4 rounded">
                   Price Breakup
                 </button>
               </td>
@@ -44,7 +44,7 @@ const Price = () => {
               </td>
               <td className="border px-4 py-2"> 1.07 cr - 1.28 cr</td>
               <td className="border px-4 py-2">
-                <button className="bg-custom-orange hover:bg-orange-500 text-white font-bold py-2 px-4 rounded">
+                <button className="bg-custom-orange  text-white font-bold py-2 px-4 rounded">
                   Price Breakup
                 </button>
               </td>
@@ -57,7 +57,7 @@ const Price = () => {
               </td>
               <td className="border px-4 py-2">1.42 cr - 1.44 cr</td>
               <td className="border px-4 py-2">
-                <button className="bg-custom-orange hover:bg-orange-500 text-white font-bold py-2 px-4 rounded">
+                <button className="bg-custom-orange  text-white font-bold py-2 px-4 rounded">
                   Price Breakup
                 </button>
               </td>

@@ -8,21 +8,24 @@ const NavBar = () => {
     setMenuTab(!menuTab);
   };
   return (
-    <div className="select-none  w-full ">
-      <div className="bg-orange-50 flex justify-between  items-center pr-2 ">
+    <div className="select-none  w-full fixed bg-gray-800/80 drop-shadow-xl ">
+      <div className=" flex justify-between  items-center pr-2 ">
         <img src={Logo} alt="logo" className="w-[70px] md:w-28" />
-        <div className="hidden   md:flex gap-4 ">
+        <div className="hidden text-white  md:flex gap-4 ">
           <p className="font-semibold  px-2 py-1 bg-custom-orange rounded-md">
             Home
           </p>
           <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">About</p>
           <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">Project</p>
+          <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">Amenities</p>
+          <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">Site & Floor </p>
           <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">Price</p>
+          <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange"> Virtual Tour</p>
           <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">Contact Us</p>
         </div>
-        <div className="flex items-center">
-          <IoIosCall/>
-        <p className="hidden md:flex font-semibold">+91 89787**798</p>
+        <div className="hidden md:flex items-center text-white">
+          <IoIosCall cla/>
+        <p className=" font-semibold ">+91 89787**798</p>
         </div>
         <IoMenuOutline className="text-4xl md:hidden" onClick={menuTabFun} />
       </div>
@@ -33,7 +36,10 @@ const NavBar = () => {
           </p>
           <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">About</p>
           <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">Project</p>
+          <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">Amenities</p>
+          <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">Site & Floor </p>
           <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">Price</p>
+          <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange"> Virtual Tour</p>
           <p className="font-semibold px-2 py-1 rounded-md transition-all delay-100 ease-linear hover:bg-custom-orange">Contact Us</p>
         </div>
       )}{" "}

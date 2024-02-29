@@ -1,9 +1,12 @@
 import Logo from "../assets/logo.png";
 import aboutbanner from "../assets/images/about-banner.jpg";
+import { useContext } from "react";
+import { Mycontext } from "../App";
 
 const About = () => {
+  const {about}=useContext(Mycontext)
   return (
-    <div className="flex justify-evenly md:h-[80vh] items-center flex-col-reverse md:flex-row ">
+    <div className="flex justify-evenly md:h-[80vh] dark:bg-slate-800  items-center flex-col-reverse md:flex-row " ref={about}>
       <div
         className="md:w-2/6 h-[50vh] w-full bg-cover md:h-[60vh]  "
         style={{ backgroundImage: `url(${aboutbanner})` }}

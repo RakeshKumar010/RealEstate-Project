@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Ameni from "../assets/images/Ameni.jpg"
 import Ameni1 from "../assets/images/Ameni-1.jpg"
 import Ameni2 from "../assets/images/Ameni-2.jpg"
@@ -9,8 +9,10 @@ import Ameni6 from "../assets/images/Ameni-6.jpg"
 import Ameni7 from "../assets/images/Ameni-7.jpg"
 import Ameni8 from "../assets/images/Ameni-8.jpg"
 import Ameni9 from "../assets/images/Ameni-9.jpg"
+import { Mycontext } from "../App";
 
 const Amenities = () => {
+  const {amenities}=useContext(Mycontext)
     const arrayObj = [
         {
             "image": Ameni,
@@ -54,7 +56,7 @@ const Amenities = () => {
   
 
   return (
-    <div className="flex flex-col m-14">
+    <div className="flex flex-col p-14 dark:bg-slate-800 " ref={amenities}>
       <div className="text-center mb-3 dark:text-white">
         <p className="md:text-4xl text-2xl font-bold text-custom-orange">
         Amenities

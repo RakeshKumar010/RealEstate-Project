@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Mycontext } from "../App";
 
 const ContactUs = () => {
   const iframe = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121078.28993571861!2d73.85701256596377!3d18.497398980637836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e9ff81f1aae9%3A0x2560343555ac8b53!2sHadapsar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1708403780477!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+  const {contact}=useContext(Mycontext)
   return (
-    <div>
+    <div ref={contact}>
       <section className="bg-blue-50 dark:bg-slate-800" id="contact">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="mb-4">

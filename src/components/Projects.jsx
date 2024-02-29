@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import properties from "../json/properties";
 import PropertyCard from "./PropertyCard";
+import { Mycontext } from "../App";
 
 const Projects = () => {
+  const {project}=useContext(Mycontext)
   return (
-    <div>
+    <div ref={project} className="dark:bg-slate-800 ">
       <div className="text-center mb-3 dark:text-white">
         <p className="md:text-4xl text-2xl font-bold text-custom-orange">New Projects in Pune</p>
         <p>Handpicked projects for you.</p>

@@ -26,13 +26,13 @@ const Layout = () => {
       <NavBar />
       <Home />
       <ScrollButton/>
-      <About />
+       <About />
       <Projects />
       <VirtualTour setPopUpShow={setPopUpShow}/>
       <Amenities/>
       <Price />
       <ContactUs />
-      <Footer />
+      <Footer /> 
       {pupUpShow ? <PopUp setPopUpShow={setPopUpShow} /> : null}
       <ModeChange setIsdDark={setIsdDark} isDark={isDark}/>
     </div>

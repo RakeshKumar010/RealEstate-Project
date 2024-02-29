@@ -16,16 +16,16 @@ const VirtualTour = ({ setPopUpShow }) => {
 
       <div className="flex justify-around relative pt-5 gap-2 ">
         <img
-          data-aos="fade-right"
+          data-aos={window.screen.width>500?"fade-right":"flip-up"}
           src={VtImg1}
           alt="..."
-          className="w-[31vw] h-[30vw] -ml-[0.8vw] rounded-full"
+          className="w-[31vw] h-[30vw] -ml-[0.8vw] rounded-full "
         />
         <img
           data-aos="flip-up"
           src={VtGoggles}
           alt="..."
-          className="absolute w-[86.5vw] top-0 z-10 hidden lg:block "
+          className="absolute md:w-[86.5vw] w-full top-0 z-10 hidden lg:block "
         />
         <button
           className="absolute bottom-0 md:bottom-10 z-20 cursor-pointer md:w-32 md:h-32 w-20 h-20 rounded-full bg-blue-50 dark:bg-slate-800  text-custom-orange"
@@ -38,10 +38,10 @@ const VirtualTour = ({ setPopUpShow }) => {
           Click Here
         </button>
         <img
-          data-aos="fade-left"
+          data-aos={window.screen.width>500?"fade-left":"flip-up"}
           src={VtImg2}
           alt="..."
-          className="w-[31vw] h-[31vw] -mt-[0.8vw] -ml-[2vw] rounded-full "
+          className="w-[31vw] h-[31vw] -mt-[0.8vw] -ml-[2vw] rounded-full bg-black"
         />
       </div>
     </div>

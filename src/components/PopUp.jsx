@@ -4,7 +4,7 @@ import { ImCancelCircle } from "react-icons/im";
 const PopUp = ({setPopUpShow}) => {
 
   return (
-    <div  className="w-full border-2 backdrop-blur-sm fixed z-20 rounded-xl  top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 dark:bg-gray-500/40 bg-gray-500/70 p-4 md:w-[40vw]">
+    <div  className="w-full border-2 backdrop-blur-sm fixed z-30 rounded-xl  top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 dark:bg-gray-500/40 bg-gray-500/70 p-4 md:w-[40vw]">
       <ImCancelCircle onClick={()=>{
         setPopUpShow(false)
       }} className="text-white hover:text-custom-orange text-2xl absolute top-0 cursor-pointer right-0" />

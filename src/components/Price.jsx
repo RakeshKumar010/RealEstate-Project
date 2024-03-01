@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Mycontext } from "../App";
 
-const Price = () => {
-  const {price}=useContext(Mycontext)
+const Price = ({setPopUpShow}) => {
+  const {price,setPopUpHeading}=useContext(Mycontext)
   return (
     <>
       <div className="dark:text-white dark:bg-slate-800 md:px-20 w-full mx-auto " ref={price}>
@@ -33,7 +33,10 @@ const Price = () => {
               </td>
               <td className="border px-4 py-2 md:text-base text-[11px]">87.50 Lac</td>
               <td className="border px-4 py-2 md:text-base text-[11px]">
-                <button className="bg-custom-orange  text-white font-bold py-2 px-4 rounded">
+                <button     onClick={() => {
+            setPopUpShow(true);
+            setPopUpHeading('Request For Price Breakup')
+          }} className="bg-custom-orange  text-white font-bold py-2 px-4 rounded">
                   Price Breakup
                 </button>
               </td>
@@ -46,7 +49,10 @@ const Price = () => {
               </td>
               <td className="border px-4 py-2 md:text-base text-[11px]"> 1.07 cr - 1.28 cr</td>
               <td className="border px-4 py-2 md:text-base text-[11px]">
-                <button className="bg-custom-orange  text-white font-bold py-2 px-4 rounded">
+                <button     onClick={() => {
+            setPopUpShow(true);
+            setPopUpHeading('Request For Price Breakup')
+          }} className="bg-custom-orange  text-white font-bold py-2 px-4 rounded">
                   Price Breakup
                 </button>
               </td>
@@ -59,7 +65,10 @@ const Price = () => {
               </td>
               <td className="border px-4 py-2 md:text-base text-[11px]">1.42 cr - 1.44 cr</td>
               <td className="border px-4 py-2 md:text-base text-[11px]">
-                <button className="bg-custom-orange  text-white font-bold py-2 px-4 rounded">
+                <button     onClick={() => {
+            setPopUpShow(true);
+            setPopUpHeading('Request For Price Breakup')
+          }} className="bg-custom-orange  text-white font-bold py-2 px-4 rounded">
                   Price Breakup
                 </button>
               </td>

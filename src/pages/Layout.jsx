@@ -30,7 +30,7 @@ const Layout = () => {
       <Projects />
       <VirtualTour setPopUpShow={setPopUpShow}/>
       <Amenities/>
-      <Price />
+      <Price setPopUpShow={setPopUpShow}/>
       <ContactUs />
       <Footer /> 
       {pupUpShow ? <PopUp setPopUpShow={setPopUpShow} /> : null}

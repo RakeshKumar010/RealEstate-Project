@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useRef } from 'react'
+import React, { createContext, useEffect, useRef, useState } from 'react'
 import Layout from './pages/Layout'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -14,8 +14,9 @@ const amenities=useRef(null)
 const price =useRef(null)
 const virtual=useRef(null)
 const contact=useRef(null)
+const [pupUpHeading,setPopUpHeading]=useState('Premier Estates')
   return (
-    <Mycontext.Provider value={{home,about,project,amenities,price,virtual,contact}}>
+    <Mycontext.Provider value={{home,about,project,amenities,price,virtual,contact,pupUpHeading,setPopUpHeading}}>
     <Layout/>
    
     </Mycontext.Provider>

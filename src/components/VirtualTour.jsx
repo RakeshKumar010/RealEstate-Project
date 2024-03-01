@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { Mycontext } from "../App";
 
 const VirtualTour = ({ setPopUpShow }) => {
-  const { virtual } = useContext(Mycontext);
+  const { virtual,setPopUpHeading } = useContext(Mycontext);
   return (
     <div className="md:p-14 dark:bg-slate-800 " ref={virtual}>
       <div className="text-center mb-3 dark:text-white">
@@ -32,6 +32,7 @@ const VirtualTour = ({ setPopUpShow }) => {
           style={{ boxShadow: "0 0 30px #ff931e" }}
           onClick={() => {
             setPopUpShow(true);
+            setPopUpHeading('Request For Virtual Tour')
           }}
         >
           {" "}
